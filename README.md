@@ -11,6 +11,9 @@ How to use?
   //default animation
   _bannerView = [[YPBannerView alloc] initWithFrame:parentView.bounds andYPBannerItems:@[item_01,item_02...]];     
   //set animation type and duration
-  _bannerView= [[YPBannerView alloc] initWithFrame:parentView.bounds YPBannerItems:@[item_01,item_02...] animationType:YPBannerAnimationTypeCube andTimeDuration:1.5f];
+  _bannerView= [[YPBannerView alloc] initWithFrame:parentView.bounds 
+                                     YPBannerItems:@[item_01,item_02...] 
+                                     animationType:YPBannerAnimationTypeCube 
+                                   andTimeDuration:1.5f];
    
 
