@@ -4,7 +4,7 @@ How to use?
 =======YPBannerView=======
   //Banner item init
   YPBannerItem *item_01 = [[YPBannerItem alloc] initWithImage:[UIImage imageNamed:@"placehold.png"] data:nil];           
-  YPBannerItem *item_02 = [[YPBannerItem alloc] initWithUrl:@"http://img2.3lian.com/img2007/19/33/005.jpg" 
+  YPBannerItem *item_02 = [[YPBannerItem alloc] initWithUrl:@"web_url" 
                                                        data:nil 
                                              andPlaceholder:[UIImage imageNamed:@"placehold.png"]];
   ......
