@@ -2,6 +2,8 @@
     Just a few lines of code, you can easily add banner to your app. 
 ##How to install?
     Add YPBanner directory to your project and import "YPBannerView.h"
+##Dependency
+    SDWebImage
 ##How to use?
     =======YPBannerView=======
     //Banner item init
