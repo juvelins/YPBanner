@@ -1,6 +1,6 @@
 # YPBanner
     Just a few lines of code, you can easily add banner to your app. 
-    How to use?
+##How to use?
     =======YPBannerView=======
     //Banner item init
     YPBannerItem *item_01 = [[YPBannerItem alloc] initWithImage:[UIImage imageNamed:@"placehold.png"] data:nil];
