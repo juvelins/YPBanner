@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18551F991D475DB200A0B1DE /* 002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18551F981D475DB200A0B1DE /* 002@2x.png */; };
 		46F1D1501C44CCF8007B16C3 /* placehold.png in Resources */ = {isa = PBXBuildFile; fileRef = 46F1D14F1C44CCF8007B16C3 /* placehold.png */; };
 		46F3A1761C2D180D0020D2C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F3A1751C2D180D0020D2C4 /* main.m */; };
 		46F3A1791C2D180D0020D2C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F3A1781C2D180D0020D2C4 /* AppDelegate.m */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18551F981D475DB200A0B1DE /* 002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "002@2x.png"; sourceTree = "<group>"; };
 		22399993BBF58241BC16F88D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		46F1D14F1C44CCF8007B16C3 /* placehold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placehold.png; sourceTree = "<group>"; };
 		46F3A1711C2D180D0020D2C4 /* YPBannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPBannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				46F711BE1C5074F00047FD1A /* YPBannerManager.m */,
 				46F711BF1C5074F00047FD1A /* YPBannerView.h */,
 				46F711C01C5074F00047FD1A /* YPBannerView.m */,
+				18551F981D475DB200A0B1DE /* 002@2x.png */,
 				46F1D14F1C44CCF8007B16C3 /* placehold.png */,
 			);
 			name = YPBanner;
@@ -192,6 +195,7 @@
 				46F1D1501C44CCF8007B16C3 /* placehold.png in Resources */,
 				46F3A1841C2D180D0020D2C4 /* LaunchScreen.storyboard in Resources */,
 				46F3A1811C2D180D0020D2C4 /* Assets.xcassets in Resources */,
+				18551F991D475DB200A0B1DE /* 002@2x.png in Resources */,
 				46F3A17F1C2D180D0020D2C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

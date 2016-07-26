@@ -28,4 +28,5 @@ typedef NS_OPTIONS(NSInteger, YPBannerAnimationType) {
                 YPBannerItems:(NSArray<YPBannerItem *> *)itemArray
                 animationType:(YPBannerAnimationType)type
               andTimeDuration:(NSTimeInterval)duration;
+-(void)setChangePageContrwithimgCurrentimg:(NSString *)imgCurrentimg andimgOtherimg:(NSString *)imgOtherimg;
 @end

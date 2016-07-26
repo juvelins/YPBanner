@@ -32,6 +32,8 @@
 //    _bannerView = [[YPBannerView alloc] initWithFrame:_testView.bounds andYPBannerItems:@[item_01,item_02,item_03]];
     //设置动画
     _bannerView= [[YPBannerView alloc] initWithFrame:_testView.bounds YPBannerItems:@[item_01,item_02,item_03] animationType:YPBannerAnimationTypeCube andTimeDuration:1.5f];
+       [_bannerView setChangePageContrwithimgCurrentimg:@"placehold" andimgOtherimg:@"002"];
+    //
     [_testView addSubview:_bannerView];
     [_bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(_bannerView);

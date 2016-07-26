@@ -112,7 +112,7 @@
 }
 
 - (void)initPageControl {
-    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(VIEW_WIDTH/2.0f-20, VIEW_HEIGHT-20.f, 40, 20)];
+    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(VIEW_WIDTH/2.0f-20, VIEW_HEIGHT-20.f, 15, 15)];
     [_pageControl setNumberOfPages:[_bannerManager countOfItems]];
     [self addSubview:_pageControl];
     [self bringSubviewToFront:_pageControl];
@@ -208,6 +208,39 @@
     [_pageControl setNumberOfPages:manager.countOfItems];
     _centerImageIndex = 0;
 }
+
+#pragma mark  ChangePageCotronImage
+-(void)setChangePageContrwithimgCurrentimg:(NSString *)imgCurrentimg andimgOtherimg:(NSString *)imgOtherimg
+{
+    [self changePageControlImage:_pageControl withimgCurrentimg:imgCurrentimg andimgOtherimg:imgOtherimg];
+    
+}
+
+- (void)changePageControlImage:(UIPageControl *)pageControl withimgCurrentimg:(NSString *)imgCurrentimg andimgOtherimg:(NSString *)imgOtherimg
+{
+    static UIImage *imgCurrent = nil;
+    static UIImage *imgOther = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        imgCurrent = [UIImage imageNamed:imgCurrentimg];
+        imgOther = [UIImage imageNamed:imgOtherimg];
+    });
+    
+    
+    if (pageControl) {
+        [pageControl setValue:imgCurrent forKey:@"_currentPageImage"];
+        [pageControl setValue:imgOther forKey:@"_pageImage"];
+    } else {
+        for (int i = 0;i < pageControl.numberOfPages; i++) {
+            UIImageView *imgv = [pageControl.subviews objectAtIndex:i];
+            imgv.frame = CGRectMake(imgv.frame.origin.x, imgv.frame.origin.y, 15, 15);
+            imgv.image = pageControl.currentPage == i ? imgCurrent : imgOther;
+        }
+    }
+}
+
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
